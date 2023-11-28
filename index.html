@@ -10,7 +10,9 @@
 
 --2: cards of work you've done (incliding placeholders for future work!)
 ----a: the first item should be larger than the others
+------i: replace the Gif with another that doesn't have your cursor in it
 ----b: when clicked on the items should link to the deployed application.
+----c: make this a dropdown menu.
 
 3: make sure that the webpage can be responsive depending on the user's viewport size
 
@@ -26,6 +28,7 @@
     <head>
         <meta charset="UTF-8" />
         <link rel="stylesheet" href="./Assets/CSS/reset.css"> <!--reset stylesheet-->
+        <link rel="stylesheet" href="./Assets/CSS/fonts.css">
         <link rel="stylesheet" href="./Assets/CSS/styles.css">
         <title>Spikey's Portfolio</title>
     </head>
@@ -33,18 +36,83 @@
     <body>
         
         <header>
+
             <section>
                 <h1>Welcome to Spikey1289's Portfolio!</h1>
-                <p>we hope you enjoy your stay</p>
+                <h2>I hope you enjoy your stay</h2>
             </section>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a><h3>Spikey's Bio</h3></a>
+                    </li>
+                    <li>
+                        <!-- <button href="#" class="dropbtn">Work I've Done</button>  --> <!--2C-->
+                        <a><h3>Work I've Done</h3></a>
+                    </li>
+                    <li>
+                        <a><h3>Contact Info</h3></a>
+                    </li>
+                </ul>
+            </nav>
 
         </header>
 
+        <!-- bg img container -->
+        <figure></figure>
 
+        <!-- container for the works cards -->
+        <main>
+            <section class="firstProject">
+                <figure>
+                    <figcaption>My First Project</figcaption>
+                    <a href="https://spikey1289.github.io/Challenge-1/">
+                        <img src="./Assets/Images/First Project Gif.gif" alt="A Linked Gif of my entire first project">
+                    </a>
+                </figure>
+            </section>
 
+            <section>
+                <figure>
+                    <figcaption>A Placeholder Image</figcaption>
+                    <a href="">
+                        <img src="https://placehold.jp/3d4070/ffffff/200x200.png?text=Placeholder" alt="A Placeholder Image">
+                    </a>
+                </figure>
+            </section>
 
+            <section>
+                <figure>
+                    <figcaption>A Placeholder Image</figcaption>
+                    <a href="">
+                        <img src="https://placehold.jp/3d4070/ffffff/200x200.png?text=Placeholder" alt="A Placeholder Image">
+                    </a>
+                </figure>
+            </section>
 
+            <section>
+                <figure>
+                    <figcaption>A Placeholder Image</figcaption>
+                    <a href="">
+                        <img src="https://placehold.jp/3d4070/ffffff/200x200.png?text=Placeholder" alt="A Placeholder Image">
+                    </a>
+                </figure>
+            </section>
 
+            <section>
+                <figure>
+                    <figcaption>A Placeholder Image</figcaption>
+                    <a href="">
+                        <img src="https://placehold.jp/3d4070/ffffff/200x200.png?text=Placeholder" alt="A Placeholder Image">
+                    </a>
+                </figure>
+            </section>
+        </main>
+
+        <footer>
+
+        </footer>
 
     </body>
 
