@@ -11,4 +11,4 @@ Through this challenge, I was able to learn how to create a website from scratch
 
 
 ### Screenshot of Finished Website
-![Screenshot of Website]
+![Screenshot of Website](./Assets/Images/READMEphoto.png)
