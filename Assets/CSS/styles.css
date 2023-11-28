@@ -1,0 +1,65 @@
+:root {
+    --bgClr: #7EB2DD;
+    --brdrClr: #FFE8D4;
+    --txtClr: #e0eae4;
+}
+
+body {
+    line-height: 1.5;
+    background-color: var(--bgClr);
+    color: var(--txtClr);
+}
+
+h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 0.625rem;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+header {
+    width: 100%;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    border: 20px solid var(--brdrClr);
+}
+
+header nav{
+    width: 80%;
+    position: relative;
+    left: 10%;
+}
+
+header nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 1rem;
+}
+
+header nav ul li{
+    width: 100%;
+    outline: 2px solid var(--brdrClr);
+    outline-offset: -3px;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+}
+
+@media screen and (max-width: 992px) {
+    header nav ul {
+            flex-flow: column;
+        }
+
+        header nav ul li {
+            width: 100%;
+            padding-bottom: 1rem;
+        }
+}
