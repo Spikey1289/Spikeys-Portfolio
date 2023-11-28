@@ -24,6 +24,11 @@ header {
     border: 20px solid var(--brdrClr);
 }
 
+a{
+    color: var(--txtClr);
+    text-decoration: none;
+}
+
 header nav{
     width: 80%;
     position: relative;
@@ -32,11 +37,10 @@ header nav{
 
 header nav ul{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 1rem;
+    padding: 1rem;
 }
 
 header nav ul li{
@@ -45,21 +49,94 @@ header nav ul li{
     outline-offset: -3px;
 }
 
+header nav ul li:hover{
+    outline: 5px solid var(--txtClr);
+    background-color: var(--brdrClr);
+} 
+a:hover {
+    color: var(--bgClr);
+ }
 
-
-
-
-@media screen and (max-width: 768px) {
-
+header nav ul li:active {
+    outline: 5px solid var(--txtClr);
+    background-color: var(--bgClr);
+} 
+a:active {
+    color: var(--brdrClr);
 }
 
-@media screen and (max-width: 992px) {
+main{
+    width: 96%;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+main h4 {
+    color: var(--bgClr);
+    outline: 5px solid var(--txtClr);
+    background-color: var(--brdrClr);
+    width: 30%;
+    margin-left: 35%;
+}
+
+main div {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding: 4%;
+    justify-content: center;
+}
+
+main div section {
+    flex: 1 0 100%;
+    padding: 1%;
+}
+
+.firstProject{
+    flex: 1 0 100%;
+}
+
+main div section figure{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+
+main div section figure a img{
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--brdrClr);
+}
+
+main div section figure a img:hover{
+    width: 100%;
+    height: 100%;
+    border: 10px solid var(--txtClr);
+}
+
+main div section figure a img:active {
+    width: 100%;
+    height: 100%;
+    border: 10px solid #a2e8bd;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    main div section{
+        flex: 1 0 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
     header nav ul {
-            flex-flow: column;
+            flex-flow: row;
         }
 
         header nav ul li {
             width: 100%;
-            padding-bottom: 1rem;
+            padding-bottom: 0rem;
         }
 }

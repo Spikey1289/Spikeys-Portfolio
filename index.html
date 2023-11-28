@@ -4,15 +4,11 @@
 
 --1: include a breif bio about you, including the following:
 ----a: A Photo/Avatar with your name/Usernanme
-----b: links to social media/other sections/ work you've done
+----b: links to social media
 ----c: contact info
-----d: links to the corrisponding section/card so that it scrolls there when clicked
 
 --2: cards of work you've done (incliding placeholders for future work!)
-----a: the first item should be larger than the others
-------i: replace the Gif with another that doesn't have your cursor in it
 ----b: when clicked on the items should link to the deployed application.
-----c: make this a dropdown menu.
 
 3: make sure that the webpage can be responsive depending on the user's viewport size
 
@@ -45,14 +41,14 @@
             <nav>
                 <ul>
                     <li>
-                        <a><h3>Spikey's Bio</h3></a>
+                        <a href="#bio"><h3>Spikey's Bio</h3></a>
                     </li>
                     <li>
                         <!-- <button href="#" class="dropbtn">Work I've Done</button>  --> <!--2C-->
-                        <a><h3>Work I've Done</h3></a>
+                        <a href="#work"><h3>Work I've Done</h3></a>
                     </li>
                     <li>
-                        <a><h3>Contact Info</h3></a>
+                        <a href="#contact-Info"><h3>Contact Info</h3></a>
                     </li>
                 </ul>
             </nav>
@@ -62,56 +58,73 @@
         <!-- bg img container -->
         <figure></figure>
 
+        <!-- Container for Bio -->
+        <article id="Bio">
+            <h4>Spikey's Bio</h4>
+            <figure>
+                <img src="" alt="">
+                <figcaption>
+                    Spikey1289
+                </figcaption>
+            </figure>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias enim minus unde, odit rem repudiandae iure dolore eius quaerat, vitae temporibus commodi nam culpa quisquam reiciendis, ipsum quia voluptate in.
+            </p>
+        </article>
+
         <!-- container for the works cards -->
-        <main>
-            <section class="firstProject">
-                <figure>
-                    <figcaption>My First Project</figcaption>
-                    <a href="https://spikey1289.github.io/Challenge-1/">
-                        <img src="./Assets/Images/First Project Gif.gif" alt="A Linked Gif of my entire first project">
-                    </a>
-                </figure>
-            </section>
-
-            <section>
-                <figure>
-                    <figcaption>A Placeholder Image</figcaption>
-                    <a href="">
-                        <img src="https://placehold.jp/3d4070/ffffff/200x200.png?text=Placeholder" alt="A Placeholder Image">
-                    </a>
-                </figure>
-            </section>
-
-            <section>
-                <figure>
-                    <figcaption>A Placeholder Image</figcaption>
-                    <a href="">
-                        <img src="https://placehold.jp/3d4070/ffffff/200x200.png?text=Placeholder" alt="A Placeholder Image">
-                    </a>
-                </figure>
-            </section>
-
-            <section>
-                <figure>
-                    <figcaption>A Placeholder Image</figcaption>
-                    <a href="">
-                        <img src="https://placehold.jp/3d4070/ffffff/200x200.png?text=Placeholder" alt="A Placeholder Image">
-                    </a>
-                </figure>
-            </section>
-
-            <section>
-                <figure>
-                    <figcaption>A Placeholder Image</figcaption>
-                    <a href="">
-                        <img src="https://placehold.jp/3d4070/ffffff/200x200.png?text=Placeholder" alt="A Placeholder Image">
-                    </a>
-                </figure>
-            </section>
+        <main id="Work">
+            <h4>Work I've Done</h4>
+            <div>
+                <section class="firstProject">
+                    <figure>
+                        <figcaption>My First Project</figcaption>
+                        <a href="https://spikey1289.github.io/Challenge-1/">
+                            <img src="./Assets/Images/First Project.png" alt="A Linked Image to my first project">
+                        </a>
+                    </figure>
+                </section>
+                
+                <section>
+                    <figure>
+                        <figcaption>A Placeholder Image</figcaption>
+                        <a href="">
+                            <img src="https://placehold.jp/3d4070/ffffff/200x200.png?text=Placeholder" alt="A Placeholder Image">
+                        </a>
+                    </figure>
+                </section>
+                
+                <section>
+                    <figure>
+                        <figcaption>A Placeholder Image</figcaption>
+                        <a href="">
+                            <img src="https://placehold.jp/3d4070/ffffff/200x200.png?text=Placeholder" alt="A Placeholder Image">
+                        </a>
+                    </figure>
+                </section>
+                
+                <section>
+                    <figure>
+                        <figcaption>A Placeholder Image</figcaption>
+                        <a href="">
+                            <img src="https://placehold.jp/3d4070/ffffff/200x200.png?text=Placeholder" alt="A Placeholder Image">
+                        </a>
+                    </figure>
+                </section>
+                
+                <section>
+                    <figure>
+                        <figcaption>A Placeholder Image</figcaption>
+                        <a href="">
+                            <img src="https://placehold.jp/3d4070/ffffff/200x200.png?text=Placeholder" alt="A Placeholder Image">
+                        </a>
+                    </figure>
+                </section>
+            </div>
         </main>
 
-        <footer>
-
+        <footer id="contact-Info">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo eos ipsam dolorum similique maiores voluptate dicta animi amet adipisci esse magni hic, vero cumque in, repellendus cum blanditiis deleniti consequatur?</p>
         </footer>
 
     </body>
